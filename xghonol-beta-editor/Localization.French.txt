@@ -1,0 +1,138 @@
+.,French
+quest.name,X'Ghonol l'oubliée (v0.4)
+quest.description,<i>Lors de votre dernier séjour en ville, vous avez été informé de l'existence de la forteresse de X'Ghonol, abandonnée depuis des années.\nAbandonnée ?  Rien n'est moins sûr d'après les villageois et paysants qui ont noté la présence de créatures maléfiques attaquant régulièrement les habitants.\nA la demande du bourgmestre, vous vous mettez en route vers X'Ghonol afin d'en savoir plus et de rétablir la paix dans la région.</i>
+quest.synopsys,Explorez une forteresse et les profondeurs d'une crypte oubliée, affrontez le mal qui s'y cache !
+quest.authors,SpaceEye
+quest.authors_short,SpaceEye
+DoorDoor1.text,<i>Une haute palissade en bois barre votre chemin. Elle semble coincée.</i>\n\nEffectuez un test de {might} pour l'ouvrir.
+DoorDoor1.button1,{action}Test {might}
+EventStart.button1,Facile
+EventDoor1Open.text,<i>La palissade s'ouvre dans un sinistre craquement</i>\n\nEnlevez la Porte,\nPlacez 53A, 63A, une Transition et une Porte comme indiqué.\n
+EventDoor1Failed.button1,Continuer
+EventTestMightDoor1.text,<i>Avez-vous réussi le test de {might} ? </i>
+EventDoor1Failed.text,<i>Malgré tous vos efforts, la palissade ne bouge pas</i>\n\nVous vous luxez une épaule, subissez 1{fatigue}
+EventGoblinsDead.button1,Continuer
+SpawnGoblins1.button1,Continuer
+SpawnCityHall1.button1,Continuer
+EventTestMightDoor1.button1,Oui
+EventTestMightDoor1.button2,Non
+EventGoblinsDead.text,<i>Le dernier Archer Gobelin meurt dans d'atroces souffrances, en laissant tomber au sol un sac. En le fouillant, vous trouvez une clé d'acier , 100 pièces d'or et {c:QItemFound1}.</i>\n\nAjoutez {c:QItemFound1} à l'inventaire du héro qui a tué le dernier monstre.
+EventDoor1Open.button1,Continuer
+EventDoor2Opened.text,<i>La grille pivote dans un horrible grincement. Vous débouchez sur une large place, au centre de X'Ghonol, étrangement silencieuse.</i>\n\nPlacez 50A, une Sortie et deux Portes comme indiqué.\nRetirez la Porte que vous venez d'ouvrir.
+DoorDoor2Closed.button1,{action}Ouvrir
+DoorDoor2Openable.text,<i>La clé d'acier que vous avez trouvé semble pouvoir ouvrir la grille.</i>\n\n{action}Ouvrir
+DoorDoor2Closed.text,<i>Une large grille d'acier se dresse devant vous.</i>\n\n{action}Ouvrir
+DoorDoor2Openable.button1,{action}Ouvrir
+EventDoor2Opened.button1,Continuer
+EventPlaceMerchant.text,<i>Un homme se tient au fond du bâtiment.</i>\n\nPlacez un jeton Villageois comme indiqué.
+DoorDoor3.button1,{action}Ouvrir
+EventOpenDoor3.text,Placez 54A, 56A, 51A, 1 Transition, 3 Cul de Sac et un jeton Fouille comme indiqué.\nRetirez la porte.
+DoorDoor3.text,<i>Une porte permettant de rentrer dans un large bâtiment.</i>\n\n{action}Ouvrir
+EventOpenDoor3.button1,Continuer
+EventPlaceMerchant.button1,Continuer
+EventTestAwareness.text,<i>Avez-vous réussi le test de {awareness} ? </i>
+TokenVillageois.button1,{action}Lui parler
+TokenChest0.button1,{action}Test {awareness}
+SpawnCityHall1.text,<i>Des {type} surgissent soudain sur le haut des remparts.</i>\n\nPlacez le groupe {type} comme indiqué, en respectant vos limites de groupe.
+SpawnCityHall2.button1,Continuer
+SpawnCityHall2.text,<i>Le panneau inférieur en bois des remparts explose, laissant place à un groupe de {type}</i>\n\nPlacez le groupe {type} comme indiqué, en respectant vos limites de groupe.
+SpawnZombies.button1,Continuer
+TokenKeyCrypt.text,<i>Un coffre finement sculpté.</i>\n\n{action}Effectuez un test de {might} pour l'ouvrir.
+TokenChest0.text,<i>Un petit coffre se trouve près de la grande palissade. Un étrange mécanisme semble le verrouiller. </i>\n\n{action}Effectuez un test de {awareness} pour tenter de l'ouvrir.
+EventOpenChest1.text,<i>Vous trouvez 150 pièces d'or.\n</i>\nPiochez un carte Fouille. \nRetirez le jeton Fouille.
+EventOpenChest1.button1,Continuer
+EventTestAwareness.button1,Oui
+EventTestAwareness.button2,Non
+EventOpenChest1Failed.text,<i>Vous vous concentrez intensemment mais ne trouvez pas de faille dans ce mécanisme. Pire, en manipulant le mécanisme, vous vous piquez sur une aiguille que vous n'aviez pas vu.</i> \n\nSubissez 1{fatigue} et le héro est empoisonné (ajoutez la Condition Empoisonné au héro) !
+EventOpenChest1Failed.button1,Continuer
+EventGoDown.text,<i>Le passage s'enfonce dans les profondeurs de la terre.</i>\n\nPlacez une Entrée, 6B, deux jetons Fouille, deux jetons Objectif et une Porte comme indiqué.\nRetirez la Porte de la crypte.
+DoorDoorCrypt.text,<i>Un tunnel descend dans les profondeurs de la terre. Une large porte en métal en barre l'accés.</i>\n\n{action}Ouvrir
+DoorDoorCrypt.button1,{action}Ouvrir
+DoorDoorCryptOpenable.text,<i>La clé que vous avez trouvé semble correspondre à cette porte. Voulez-vous tenter de l'ouvrir ?</i>\n\n{action}Ouvrir
+DoorDoorCryptOpenable.button1,{action}Ouvrir
+EventGoDown.button1,Continuer
+EventWillSuccess.text,<i>Vous vous concentrez intensemment et le coffre s'ouvre dans un claquement</i>\n\nPiochez une carte Fouille.\nRetirez le jeton Fouille.
+TokenStatue1.text,<i>Une large statue représentant deux chevaliers.</i>
+TokenStatue1.button1,Continuer
+TokenStatue2.text,<i>Une large statue représentant un groupe d'araignées géantes.</i>
+TokenStatue2.button1,Continuer
+DoorDoorFinal.text,<i>Une large porte dorée, finement ciselée.</i>\n\n{action}Ouvrir
+DoorDoorFinal.button1,{action}Ouvrir
+TokenChest1.text,<i>Ce coffre semble rayonner d'une aura magique.</i>\n\n{action}Effectuez un test de {knowledge} pour tenter de l'ouvrir.
+TokenChest1.button1,{action}Test {knowledge}
+EventTestKnowledge.text,Avez-vous réussi votre test de {knowledge} ?
+EventTestKnowledge.button1,Oui
+EventTestKnowledge.button2,Non
+EventKnowledgeOk.text,<i>Le coffre s'ouvre et disparait comme un nuage.</i>\n\nRetirez le jeton Fouille et piochez une carte Fouille
+EventKnowledgeOk.button1,Continuer
+EventKnowledgeFail.text,<i>Un violent éclair jailli du coffre !</i>\n\nVous perdez 2{heart} et le héro est sonné (ajoutez la Condition Sonné au héro). 
+EventKnowledgeFail.button1,Continuer
+TokenChest2.button1,{action}Test {will}
+EventWillFail.button1,Continuer
+EventTestWill.text,Avez-vous réussi votre test de {will}?
+EventTestWill.button1,Oui
+EventTestWill.button2,Non
+EventWillSuccess.button1,Continuer
+EventWillFail.text,<i>Une décharge d'énergie vous frappe en pleine tête et traverse tout votre corps ! Vous vous sentez très fébrile, incapable de bouger.</i>\n\nVous subissez 4{fatigue} et le héro est immobilisé (ajoutez la Condition Immobilisé au héro). 
+TokenChest2.text,<i>Un coffre mystérieux qui semble entourré d'une énergie pulsatile.</i>\n\n{action}Effectuez un test de {will} pour tenter de l'ouvrir.
+TokenKeyCrypt.button1,{action}Test {might}
+TokenDebug.text,Debug\n\nTrouvé {c:QItemFound1}
+EventTestMightForCrypt.text,Avez-vous réussi votre test de {might}?
+EventTestMightForCrypt.button1,Oui
+EventTestMightForCrypt.button2,Non
+EventTestMightForCryptKO.text,<i>Vous forcez de tous vos muscles sans succés. Cet effort vous a épuisé.</i>\n\nVous subissez 3{fatigue}.
+EventTestMightForCryptKO.button1,Continuer
+EventTestMightForCryptOK.text,<i>Un premier clic se fait entendre. Quelque chose vient de se déverrouiller. Un halo magique sort violemment du coffre !</i>\n\nUn héro adjacent au coffre effectue un test de {knowledge}.
+EventTestMightForCryptOK.button1,Test {knowledge} réussi
+EventTestMightForCryptOK.button2,Test {knowledge} échoué
+EventTestKnowCryptOK.text,<i>Le coffre s'ouvre enfin. Une large clé d'or se trouve au fond ainsi que 150 pièces d'or.</i>\n\nPiochez une carte Fouille.\nRetirez le jeton Fouille.
+EventTestKnowCryptOK.button1,Continuer
+EventTestKnowCryptKO.text,<i>Le coffre se verrouille ! Votre nez et vos oreilles se mettent à saigner...</i>\n\nLe héro qui a effectué le test subit 1{heart}, 1{fatigue} et se met à saigner (ajoutez la Condition Saignement au héro).
+EventTestKnowCryptKO.button1,Continuer
+SpawnZombies.text,<i>Au moment où vous récupérez la clé, des {type} sortent des lits que vous aviez omis d'inspecter !</i>\n\nPlacez le groupe {type} comme indiqué, en respectant vos limites de groupe.\n\n<b>Règle spéciale :</b> Chaque héro mis KO par un {type} devient malade (ajoutez la Condition Malade au héro). <b>Cette condition est conservée (même si le héro était déjà malade avant d'être mis à terre) lorsque le héro est revigoré ou se redresse !</b>
+SpawnHulk.button1,Continuer
+EventWontOpen.text,<i>La porte est verrouillée, il vous faut trouver une clé.</i>
+EventWontOpen.button1,Continuer
+TokenDebug.button1,Continuer
+EventEventMerchantFear.button1,Continuer
+EventFinalRoom.button1,Continuer
+EventStart.text,<i>Après une longue marche et quelques errements, vous trouvez l'entrée du chemin qui mène à la ville</i>\n\nPlacez une Entrée, 17A, une Porte et un jeton Fouille comme indiqué.\nPlacez les héros sur l'entrée.\n\nVoulez-vous jouer cette quête en mode Facile ou Normal ?\nEn mode facile, vous démarrez avec 1XP et les périls seront plus tardifs.
+SpawnHulk.text,<i>Des flammes et de la lave surgissent devant le trone et au mileu d'un torrent de lave, un groupe de {type} surgit devant vous !</i>\n\nPlacez le groupe {type} comme indiqué, en respectant vos limites de groupe.
+EventFinalBossDefeated.text,<b>Ahhh, je vous maudits, je reviendrai !</b>\n\n<i>Dans un hurlement de rage, Tristaine Olliven et ses invocations disparaissent dans un nuage de flammes.</i>\n\nRetirez Tristayne Olliven et les Ynfernael Hulk Restant.
+SpawnLieutenant.button1,Continuer
+TokenVillageois.text,<i>L'homme est un marchant.</i>\n\n{action}Lui parler
+SpawnLieutenant.text,<i>Dans le fond de la salle, vous appercevez celui qui est la cause de tout cela : l'infame {type} !</i>\n\nPlacez {type} comme indiqué.\nObjectif : vous devez le tuer !
+EventFinalBossDefeated.button1,Continuer
+SpawnStatueLieutenant.button1,Continuer
+SpawnGoblins1.text,<i>La palissade s'ouvre sur un camps d'entrainement au tir à l'arc. Des archers sont en pleine session d'entrainement ! Autant surpris que vous, ils se mettent à hurler et vous attaquent.</i>\n\nPlacez le groupe {type} comme indiqué, en respectant vos limites de groupe.
+SpawnStatueSpiders.button1,Continuer
+SpawnStatueLieutenant.text,<i>Alors que les flammes se dissipent, vous entendez des bruits provenant du couloir qui vous a mené à la salle du trone. Catastrophe, les statues s'animent et vous attaquent !</i>\n\nPlacez le groupe {type} comme indiqué, en respectant vos limites de groupe.\nRetirez le jeton Objectif.
+EventWinOnSpider.text,<i>Vous tuez enfin le dernier monstre. Epuisés mais fier d'avoir rétabli la paix dans la région, vous pouvez enfin regagner la ville pour célébrer votre victoire.\nBravo, vous avez gagné !</i>
+EventWinOnSpider.button1,Continuer
+EventWinOnTinmen.text,<i>Vous tuez enfin le dernier monstre. Epuisés mais fier d'avoir rétabli la paix dans la région, vous pouvez enfin regagner la ville pour célébrer votre victoire.\nBravo, vous avez gagné !</i>
+EventWinOnTinmen.button1,Continuer
+EventNoMorale.text,<i>Dans un râle d'agonie, le héro s'affaisse au sol, vaincu. Votre troupe se rend à l'évidence, cette quête est trop difficile pour vous, la mort dans l'âme, vous fuyez tant bien que mal.</i>\n\n<b>Vous avez perdu !</b>
+EventNoMorale.button1,Continuer
+EventFinalRoom.text,<i>Une salle du trone majestueuse se présente devant vous.</i>\n\nPlacez 1B, 2 Cul de Sac et un jeton Fouille comme indiqué.\nRetirez la Porte.
+SpawnStatueSpiders.text,Placez le groupe {type} comme indiqué, en respectant vos limites de groupe.\nRetirez le jeton Objectif.\n\nObjectif : vaincre ces derniers ennemis !
+EventEventMerchantReady.text,"<i>Le marchand vous accueille avec un grand sourire. ""Nobles aventuriers, je possède de rares objets et vous m'avez l'air fort riches.""</i>"
+EventEventMerchantReady.button1,Faire des achats
+EventLeaveMerchant.text,<i>Dans un nuage de fumée le marchand disparait !</i>\n\nRetirez le jeton Villageois.
+EventEventShopNow.button1,Quitter le marchand
+EventLeaveMerchant.button1,Continuer
+EventRemoveMerchant.text,<i>Derrière vous, vous voyez le villageois fuir en riant...</i>\n\nRetirez le jeton Villageois.
+EventPerilUpdate.button1,Continuer
+TokenLastChest.text,<i>Un large coffre doré occupe un coin de la salle du Trone</i>\n\n{action}Ouvrir
+TokenLastChest.button1,{action}Ouvrir
+EventOpenLastChest.text,<i>Le coffre est bien rempli !</i>\n\nPiochez <b>2</b> cartes Fouille.\nRetirez le jeton Fouille.
+EventOpenLastChest.button1,Continuer
+EventZombieDied.button1,Continuer
+EventZombieDied.text,<i>En mourant, le dernier Zombie laisse tomber {c:QItemFound2} au sol</i>\n\nAjoutez {c:QItemFound2} à l'inventaire du héro qui a tué le dernier monstre.
+EventEttinDied.text,<i>Dans un dernier râle, le monstre laisse tomber au sol {c:QItemFound3}</i>\n\nAjoutez {c:QItemFound3} à l'inventaire du héro qui a tué le dernier monstre.
+EventEttinDied.button1,Continuer
+EventEventMerchantFear.text,<i>L'homme, effrayé, est recroquevillé sous la table. Il refuse de vous parler.</i>
+EventRemoveMerchant.button1,Continuer
+EventStart.button2,Normal
+EventEasy.text,"<i>Votre équipe est particulièrement bien préparée pour cette quête et bénéficie de son expérience passée. La quête sera aussi moins périlleuse.</i>\n\nVous démarrez avec 1XP. Pensez à mettre à jour vos compétences dans le menu ""Compétences""."
+EventEasy.button1,Continuer
+EventEventMerchantReady.button2,Quitter le marchand

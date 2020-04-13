@@ -1,0 +1,137 @@
+.,English
+quest.name,Lost City X'Ghonol (v0.4)
+quest.description,<i>While resting in the city after your last quest, your group has been informed of the existence of X'Ghonol fortress, an abandoned stronghold.\nAbandoned? Not so sure according to nearby farmers who were recently attacked by maleficent creatures.\nThe city's mayor asked you to travel to X'Ghonol fortress and to bring back peace in the area. By all means.</i>
+quest.synopsys,Explore a fortress and a forgotten crypt, fight an hidden Evil!
+quest.authors,SpaceEye
+quest.authors_short,SpaceEye
+DoorDoor1.text,<i>A tall wooden fence block the passage. It seems blocked.</i>\n\nPerform a test of {might} to open it.
+DoorDoor1.button1,{action}Test {might}
+EventStart.button1,Easy
+EventDoor1Open.text,<i>With a creepy creak, the fence finally move.</i>\n\nRemove the Door,\nPlace tiles 53A, 63A, a Transition and a Door as shown.\n
+EventDoor1Failed.button1,Continue
+EventTestMightDoor1.text,<i>Did you pass the test of {might} ? </i>
+EventDoor1Failed.text,<i>Despite all your efforts, the fence does not move at all.</i>\n\nYou slightly dislocate your shoulder, suffer 1{fatigue}
+EventGoblinsDead.button1,Continue
+SpawnGoblins1.button1,Continue
+SpawnCityHall1.button1,Continue
+EventTestMightDoor1.button1,Yes
+EventTestMightDoor1.button2,No
+EventGoblinsDead.text,<i>The last Goblin Archer dies miserably, dropping a bag. Searching the bag, you find a steel key, 100 gold and {c:QItemFound1}.</i>\n\nAdd {c:QItemFound1} to the inventory of the hero who killed the Goblin.
+EventDoor1Open.button1,Continue
+EventDoor2Opened.text,<i>The grid is opened. You face a large oddly quiet place, at the center of X'Ghonol.</i>\n\nPlace tiles 50A, an Exit and two Doors as shown.\nRemove the Door you just opened.
+DoorDoor2Closed.button1,{action}Open
+DoorDoor2Openable.text,<i>The steel key you just found might open the grid.</i>\n\n{action}Open
+DoorDoor2Closed.text,<i>A large steel grid blocks your way.</i>\n\n{action}Open
+DoorDoor2Openable.button1,{action}Open
+EventDoor2Opened.button1,Continue
+EventPlaceMerchant.text,<i>A man stands still in a corner.</i>\n\nPlace a Villager token as shown.
+DoorDoor3.button1,{action}Open
+EventOpenDoor3.text,Place tiles 54A, 56A, 51A, 1 Transition, 3 Dead end and 1 search Token as shown.\nRemove the door.
+DoorDoor3.text,<i>A door to a massive building.</i>\n\n{action}Open
+EventOpenDoor3.button1,Continue
+EventPlaceMerchant.button1,Continue
+EventTestAwareness.text,<i>Did you pass the test of {awareness}? </i>
+TokenVillageois.button1,{action}Talk to him
+TokenChest0.button1,{action}Test {awareness}
+SpawnCityHall1.text,<i>{type} suddenly appear at the top of the ramparts!</i>\n\nPlace the {type} group as shown.
+SpawnCityHall2.button1,Continue
+SpawnCityHall2.text,<i>a large cabin at the bottom of the ramparts explodes, giving way to a group of {type}</i>\n\nPlace the {type} group as shown.
+SpawnZombies.button1,Continue
+TokenKeyCrypt.text,<i>A finely carved chest.</i>\n\n{action}Pass a test of {might} to open it.
+TokenChest0.text,<i>A small chest is abandoned close to the fence. It seems locked by an unusual mechanism.</i>\n\n{action}Pass a test of {awareness} to open it.
+EventOpenChest1.text,<i>You found 150 gold.\n</i>\nDraw one search card.\nRemove the search token.
+EventOpenChest1.button1,Continue
+EventTestAwareness.button1,Yes
+EventTestAwareness.button2,No
+EventOpenChest1Failed.text,<i>Despite a hard thinking, you cannot figure out how to crack the mechanism. Worse, while manipulating it, you badly prick your finger with an hidden needle.</i> \n\nSuffer 1{fatigue} and the hero who failed the test gains the Poisoned condition!
+EventOpenChest1Failed.button1,Continue
+EventGoDown.text,<i>The small passage continues deep into the ground.</i>\n\nPlace an Entrance, tile 6B, two search Tokens, two objective Tokens and one Door as shown.\nRemove the crypt's door.
+DoorDoorCrypt.text,<i>A small passage continues deep into the ground. A large steel door blocks your way.</i>\n\n{action}Open
+DoorDoorCrypt.button1,{action}Open
+DoorDoorCryptOpenable.text,<i>The key you found fit the door's keylock. Do you want to open it?</i>\n\n{action}Open
+DoorDoorCryptOpenable.button1,{action}Open
+EventGoDown.button1,Continue
+EventWillSuccess.text,<i>Your high degree of concentration helps you to figure out how to open the chest!</i>\n\nDraw one search card.\nRemove the search token.
+TokenStatue1.text,<i>A large statue of two knights.</i>
+TokenStatue1.button1,Continue
+TokenStatue2.text,<i>A large statue of a swarm of giant spiders... Creepy.</i>
+TokenStatue2.button1,Continue
+DoorDoorFinal.text,<i>A finely carved golden door.</i>\n\n{action}Open
+DoorDoorFinal.button1,{action}Open
+TokenChest1.text,<i>THe chest is surrounded by a magical halo.</i>\n\n{action}Pass a test of {knowledge} to open it.
+TokenChest1.button1,{action}Test {knowledge}
+EventTestKnowledge.text,Did you pass the test of {knowledge}?
+EventTestKnowledge.button1,Yes
+EventTestKnowledge.button2,No
+EventKnowledgeOk.text,<i>The chest opens and disappear in a flash of light.</i>\n\nRemove the search token et draw one search card.
+EventKnowledgeOk.button1,Continue
+EventKnowledgeFail.text,<i>A lightning bolt comes out of the chest and hits you!</i>\n\nYou suffer 2{heart} and the hero gains Stunned condition. 
+EventKnowledgeFail.button1,Continue
+TokenChest2.button1,{action}Test {will}
+EventWillFail.button1,Continue
+EventTestWill.text,Did you pass the test of {will}?
+EventTestWill.button1,Yes
+EventTestWill.button2,No
+EventWillSuccess.button1,Continue
+EventWillFail.text,<i>An energy wave hits your face and goes all across your body! You feel dizzy and unable to move.</i>\n\nSuffer 4{fatigue} and the hero gains Immobilized condition. 
+TokenChest2.text,<i>A mysterious chest. You feel a high level of energy inside it.</i>\n\n{action}Pass a test of {will} to open it.
+TokenKeyCrypt.button1,{action}Test {might}
+TokenDebug.text,Debug\n\nFound {c:QItemFound1}
+EventTestMightForCrypt.text,Did you pass the test of {might}?
+EventTestMightForCrypt.button1,Yes
+EventTestMightForCrypt.button2,No
+EventTestMightForCryptKO.text,<i>You mobilize all your muscles without any success. This hard work exhausted you.</i>\n\nYou suffer 3{fatigue}.
+EventTestMightForCryptKO.button1,Continue
+EventTestMightForCryptOK.text,<i>You hear a tiny click. Something just opened. A magical halo goes out of the chest without any harm!</i>\n\nAn adjacent hero must pass a test of {knowledge}.
+EventTestMightForCryptOK.button1,Test of {knowledge} passed
+EventTestMightForCryptOK.button2,Test of {knowledge} failed
+EventTestKnowCryptOK.text,<i>The chest finally opens. You found a gold key and 150 golds.</i>\n\nDraw one search card.\nRemove the search token.
+EventTestKnowCryptOK.button1,Continue
+EventTestKnowCryptKO.text,<i>The chest locks again! You start bleeding from your eyes, nose and ears...</i>\n\nThe hero who failed the test suffers 1{heart}, 1{fatigue} and gains the Bleeding condition.
+EventTestKnowCryptKO.button1,Continue
+SpawnZombies.text,<i>As soon as you take the key, {type} rise out the beds you failed to search!</i>\n\nPlace the {type} group as shown.\n\n<b>Special rule:</b> Each hero knocked out by a {type} gains Diseased condition. <b>This condition persists when the hero is revived of stands back up, even if the hero already had Diseased condition before being knocked down!</b>
+SpawnHulk.button1,Continue
+EventWontOpen.text,<i>The door is locked, you need a key to open it.</i>
+EventWontOpen.button1,Continue
+TokenDebug.button1,Continue
+EventEventMerchantFear.button1,Continue
+EventFinalRoom.button1,Continue
+EventStart.text,<i>After a long travel through hazardous areas, you finally find the road to X'Ghonol.</i>\n\nPlace an Entrance, tile 17A, a Door and a search Token as shown.\nPlace the heroes on the entrance.\n\nWould you like to play this quest in easy or normal mode?\nEasy mode will grant you 1 free XP rigt now.
+SpawnHulk.text,<i>Flames and lave rise from the throne, revealing a group of {type}!</i>\n\nPlace the {type} group as shown.
+EventFinalBossDefeated.text,<b>Argg, I despite you, I'll be back!</b>\n\n<i>In a raging howl, Tristaine Olliven and its invocations disappear in a cloud of flames.</i>\n\nRemove Tristayne Olliven and the remaining Ynfernael Hulk.
+SpawnLieutenant.button1,Continue
+TokenVillageois.text,<i>The man is a merchant.</i>\n\n{action}Talk to him
+SpawnLieutenant.text,<i>In a corner of the throne room, you finally see who's behind tis horror: the infamous {type}!</i>\n\nPlace {type} as shown.\n<b>Objective :</b> You must kill him!
+EventFinalBossDefeated.button1,Continue
+SpawnStatueLieutenant.button1,Continue
+SpawnGoblins1.text,<i>The fence reveal an archery training camp, with archers right in the middle of a session! As surprised as you are, they however howl and attack you.</i>\n\nPlace the {type} group as shown.
+SpawnStatueSpiders.button1,Continue
+SpawnStatueLieutenant.text,<i>While the flames disappear, you hear noise coming from the corridor that lead you to the throne room. With horror, you watch the statues coming to life and attacking you!</i>\n\nPlace the {type} group as shown.\nRemove the objective token.
+EventWinOnSpider.text,<i>You finally kill the last monster. Exhausted although proud of your victory, you now can go back to the city and celebrate you success.\nCongratulation, you won!</i>
+EventWinOnSpider.button1,Continue
+EventWinOnTinmen.text,<i>You finally kill the last monster. Exhausted although proud of your victory, you now can go back to the city and celebrate you success.\nCongratulation, you won!</i>
+EventWinOnTinmen.button1,Continue
+EventNoMorale.text,<i>In a death rattle, a hero put a knee on the ground, knocked out. It's now obvious, this quest is to hard for you. Injured and ashamed, you managed to flee back to the city.</i>\n\n<b>The heroes have lost the quest.</b>
+EventNoMorale.button1,Continue
+EventFinalRoom.text,<i>The door reveals a large throne room.</i>\n\nPlace tiles 1B, 2 Dead end and one search Token as shown.\nRemove the door.
+SpawnStatueSpiders.text,Place the {type} group as shown.\nRemove the objective token.\n\n<b>Objective :</b> kill these remaining foes!
+EventEventMerchantReady.text,"<i>The merchant opens its arms with a large grin across its face. ""Noble adventures, I can trade marvelous items... in exchange of a few gold coins.""</i>"
+EventEventMerchantReady.button1,Continue
+EventLeaveMerchant.text,<i>In a cloud of smoke, the merchant disappears!</i>\n\nRemove the villager token.
+EventEventShopNow.button1,Leave the merchant
+EventLeaveMerchant.button1,Continue
+EventRemoveMerchant.text,<i>In you back you can hear the villager running away, laughing...</i>\n\nRemove the villager token.
+EventPerilUpdate.button1,Continue
+TokenLastChest.text,<i>A large golden chest.</i>\n\n{action}Open
+TokenLastChest.button1,{action}Open
+EventOpenLastChest.text,<i>The chest opens a reveal its content!</i>\n\nDraw <b>2</b> Search cards.\nRemove the search token.
+EventOpenLastChest.button1,Continue
+EventZombieDied.button1,Continue
+EventZombieDied.text,<i>While dying, the last Zombie drops {c:QItemFound2}.</i>\n\nAdd {c:QItemFound2} to the inventory of the hero who killed the Zombie.
+EventEttinDied.text,<i>In a frightening howl, the monster drops {c:QItemFound3}</i>\n\nAdd {c:QItemFound3} to the inventory of the hero who killed it.
+EventEttinDied.button1,Continue
+EventEventMerchantFear.text,<i>The man is frightened and hides under the table. He refuses to talk to you.</i>
+EventRemoveMerchant.button1,Continue
+EventStart.button2,Normal
+EventEasy.text,"<i>Your team is particularly well prepared for this quest and benefits from its past experience.</i>\n\nYou start with 1XP. Don't forget to select your skills using the ""Skills"" menu."
+EventEasy.button1,Continue
